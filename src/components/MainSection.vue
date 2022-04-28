@@ -27,6 +27,15 @@ export default {
 
 .main-section {
     width: 50%;
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        width: 57%;
+    }
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        width: 100%;
+    }
+    @media (max-width: $mobile-max) {
+        width: 100%;
+    }     
 }
 .container {
     max-width: 581px;

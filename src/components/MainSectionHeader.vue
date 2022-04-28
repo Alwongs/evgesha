@@ -25,6 +25,7 @@ export default {
         align-items: center;
         padding-top: 32px;
         @media (max-width: 767px) {
+            padding-top: 16px;
             flex-direction: column;
             align-items: flex-end;
         }
@@ -35,6 +36,7 @@ export default {
         font-size: 30px;
         @media (max-width: 767px) {
             text-align: right;
+            margin-bottom: 8px;
         }
         a {
             color: green;
@@ -49,18 +51,8 @@ export default {
         background-repeat: no-repeat;
         padding-left: 25px;
         height: 20px;
-
         @media (max-width: 767px) {
             justify-content: flex-end;
-        }
-        img {            
-            margin-right: 4px;
-            width: 15px;
-        } 
-        .location {
-            font-weight: 400;
-            line-height: 3;
-            vertical-align: middle;
         }
     }
 </style>
