@@ -33,7 +33,17 @@ export default {
     height: 100%; 
     margin: 0 auto;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        max-width: 506px;
+    }
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        max-width: 638px;
+    }
+    @media (max-width: $mobile-max) {
+        max-width: 100%;
+        padding: 0 16px;
+    }     
     .main-section-header {
         flex: 0 0 auto;
         margin-bottom: 19vh;

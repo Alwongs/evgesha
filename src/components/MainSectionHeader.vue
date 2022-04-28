@@ -23,6 +23,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 32px;
         @media (max-width: 767px) {
             flex-direction: column;
             align-items: flex-end;

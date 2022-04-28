@@ -24,6 +24,7 @@ export default {
         font-size: 13px;
         display: flex;
         justify-content:  space-between;
+        padding-bottom: 32px;
         @media (max-width: 767px) {
             position: absolute;
             left: 0;
