@@ -1,23 +1,32 @@
 <template>
-    <div class="wrapper">
-        <left-side />
-        <router-view/>
+    <div class="app">
+        <app-header class="app-header" />
+        <router-view class="app-page"/>
     </div>
 </template>
 
 <script>
-import LeftSide from './components/LeftSide.vue'
+import AppHeader from './components/AppHeader.vue'
 
 export default {
     name: 'App',
-    components: { LeftSide }
+    components: { AppHeader }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
-.wrapper {
+.app {
+    height: 100vh; 
     display: flex;
-    height: 100vh;
+    flex-direction: column; 
+    justify-content: space-between;  
+}
+.app-header {
+    flex-grow: 0;
+}
+.app-page {
+    flex-grow: 1;
+    height: 400px;
 }
 </style>
