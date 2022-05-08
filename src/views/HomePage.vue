@@ -1,7 +1,9 @@
 <template>
     <div class="home-page">
         <home-slider class="home-slider" />
+        <!--
         <img :src="require('../assets/img/jpg/seventh.jpg')"  alt="">
+        -->
     </div>
 </template>
 
@@ -16,6 +18,10 @@ export default {
 
 <style lang="scss" scoped>
 
+.home-page {
+    background-image: url('../assets/img/jpg/seventh.jpg');
+    background-size: cover;
+}
 .home-slider {
     height: 100%;
     width: auto;
@@ -24,6 +30,11 @@ export default {
     } 
 }
 img {
-    height: 100%;
+    visibility: hidden;
+    @media (max-width: $mobile-max) {
+        visibility: visible;
+        height: 100%;
+        width: 100%;
+    }     
 }
 </style>

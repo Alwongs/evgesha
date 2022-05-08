@@ -28,6 +28,7 @@ export default {
         },
         sayMessage(message) {
             alert(message);
+            this.$store.commit('CLOSE_MENU');
         }
     }
 }
@@ -42,10 +43,10 @@ nav {
         position: absolute;
         left: 0;
         top: 0;
-        height: 192px;
+        height: 100%;
         width: 100%;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
     } 
 }
 .nav-item {
@@ -54,7 +55,7 @@ nav {
     margin-left: 30px;
     cursor: pointer;
     &:hover {
-        background-color: rgb(255, 206, 165);
+        background-color: rgb(255, 186, 117);
     }
     @media (max-width: $mobile-max) {
         width: 100%;

@@ -75,7 +75,7 @@ header {
     margin: 0 20px;
     color: white;
     @media (max-width: $mobile-max) {
-        background-color: rgba(255, 178, 122, 0.8);
+        background-color: rgb(255, 178, 122);
         margin: 0;
         transition: 0.5s;
         transform: translateY(-100%);

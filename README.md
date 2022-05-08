@@ -1,4 +1,4 @@
-# slider
+# evgesha
 
 ## Project setup
 ```
